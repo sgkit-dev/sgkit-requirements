@@ -160,7 +160,15 @@ two possible methods.
 ### 11. Perform SVD
 
 Perform a singular value decomposition on the scaled genotype dosage
-matrix.
+matrix. There are (at least) two possible methods.
+
+* Method A: Perform a standard (full) SVD.
+
+* Method B: Perform a randomized (a.k.a. truncated) SVD.
+
+Notes: The randomized SVD produces approximate results for a smaller
+number of principal components, but is often sufficient for population
+structure analysis where only up to ~20 components may be needed.
 
 
 ### 12. Visualise
