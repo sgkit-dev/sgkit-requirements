@@ -4,9 +4,8 @@ The Ag1000G phase 2 callset contains analysis-ready SNP calls from
 whole-genome Illumina sequencing of 1142 wild-caught Anopheles gambiae
 mosquitoes.
 
-## Data access
 
-### Variant calls
+## Data access
 
 Variation data are available in VCF format from the public FTP
 site:
@@ -30,6 +29,14 @@ gcs = gcsfs.GCSFileSystem(token='anon')
 store = gcs.get_mapper(store_path)
 callset = zarr.open_consolidated(store=store)
 ```
+
+Sample metadata are available from FTP:
+
+* ftp://ngs.sanger.ac.uk/production/ag1000g/phase2/AR1/samples/samples.meta.txt
+
+...and GCS:
+
+* gs://ag1000g-release/phase2.AR1/samples/samples.meta.txt
 
 
 ## References
