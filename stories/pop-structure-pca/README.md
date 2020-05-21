@@ -28,6 +28,11 @@ applied, i.e., are analysis-ready. Can also assume the variant calls
 were originally generated in VCF format and have been converted to
 Zarr format.
 
+Regarding scale, the largest whole-genome studies in non-human eukaryotes 
+are working towards sampling of the order of 100,000 individuals. The number
+of variants differs a lot between species depending on genome size and levels
+of genetic diversity, but can be of the order of 100,000,000 variants.
+
 
 ### Sample metadata
 
